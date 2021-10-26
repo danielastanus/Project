@@ -1,8 +1,15 @@
 public class Main {
+    public static void main(String [] args){
+        printMyName();
+    }
+    public static void printMyName(){
+        System.out.println("Hello \nDaniela Alina");
 
-    public static void main(String[] args) {
+
+
         System.out.println("Hello");
         System.out.println("Daniela");
+
 
 
         short myFirstNumber = 2;
@@ -42,6 +49,8 @@ public class Main {
         short b = 2;
         boolean mare = a == 3 || b == 1;
         System.out.println(mare);
+
+
 
 
 

@@ -17,5 +17,11 @@ public class Lab2 {
         Print stars = new Print();
         stars.printStars();
 
+        Print logo = new Print();
+        logo.javaLogo();
+
+        Print head = new Print();
+        head.humanHead();
+
     }
 }
