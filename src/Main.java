@@ -4,6 +4,7 @@ public class Main {
         System.out.println("Hello");
         System.out.println("Daniela");
 
+
         short myFirstNumber = 2;
         short mySecondNumber = 9;
         int myInt = myFirstNumber + mySecondNumber;
@@ -17,6 +18,7 @@ public class Main {
         short noOne = -5;
         short noTwo = 8;
         short noThree = 6;
+
         int mySecondInt = noOne + (noTwo * noThree);
         System.out.println(mySecondInt);
 
@@ -36,6 +38,10 @@ public class Main {
          int finalResult = numberrOne + (15 / 3 * 2) - 8 % numberrTwo;
         System.out.println(finalResult);
 
+        short a = 3;
+        short b = 2;
+        boolean mare = a == 3 || b == 1;
+        System.out.println(mare);
 
 
 
