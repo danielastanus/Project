@@ -2,10 +2,10 @@ public class Main {
     public static void main(String [] args){
         printMyName();
     }
+
+
     public static void printMyName(){
         System.out.println("Hello \nDaniela Alina");
-
-
 
         System.out.println("Hello");
         System.out.println("Daniela");
@@ -16,6 +16,7 @@ public class Main {
         short mySecondNumber = 9;
         int myInt = myFirstNumber + mySecondNumber;
         System.out.println(myInt);
+
 
         float numberOne = 7;
         float numberTwo = 3;
@@ -50,11 +51,12 @@ public class Main {
         boolean mare = a == 3 || b == 1;
         System.out.println(mare);
 
+        }
 
 
 
 
 
 
-    }
+
 }
