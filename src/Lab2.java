@@ -2,9 +2,8 @@ public class Lab2 {
   public static float x=7;
   public static float y=3;
   public static float z=24;
-
-
-
+  public static double distanceKm=20;
+  public static double timeHr=30;
     public static void main(String[] args) {
 
         Calculator calc = new Calculator();
@@ -22,7 +21,9 @@ public class Lab2 {
         System.out.println(calc.division(7,8));
         System.out.println(calc.inches(7));
         System.out.println(calc.degreeFarenheit(70));
-
+        System.out.println(calc.speedKmHr(distanceKm,timeHr));
+        System.out.println(calc.speedKmHr(distanceKm*1000, timeHr*360));
+        System.out.println(calc.speedKmHr(distanceKm*1609, timeHr));
         Print stars = new Print();
         stars.printStars();
 
@@ -32,5 +33,14 @@ public class Lab2 {
         Print head = new Print();
         head.humanHead();
 
-    }
+
+
+
+
+
+
+
+
+
+  }
 }

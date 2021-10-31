@@ -18,6 +18,7 @@ public class Calculator {
             return result2;
         }
 
+
         public float division (float x, float y){
             float result3 = x/y;
             return result3;
@@ -45,6 +46,19 @@ public class Calculator {
 
 
         }
+
+        public double speedKmHr(double distanceKm,double timeHr){
+            System.out.println(distanceKm);
+            System.out.println(timeHr);
+            return distanceKm/timeHr;
+
+
+
+        }
+
+
+
+
 
 
 
