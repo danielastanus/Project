@@ -56,6 +56,21 @@ public class Calculator {
 
         }
 
+        public double printSpeedInMetric(int meters, int hours, int minutes, int seconds){
+            int timeInSeconds = (hours* 3600) + (minutes *60) + seconds;
+            float speedMeters = meters/timeInSeconds;
+            System.out.println("The speed in m/s: "+speedMeters);
+            double kmPerHour = speedMeters * 3.6;
+            System.out.println("The speed in km/h:" +kmPerHour);
+            double milesPerHour =kmPerHour/ 1.609;
+            System.out.println("The speed in m/h:" +milesPerHour);
+            return speedMeters + kmPerHour + milesPerHour;
+        }
+
+
+
+
+
 
 
 
