@@ -23,7 +23,7 @@ public class Lab3 {
         int numar = 4 ;
         System.out.println(op.textNumber(texxtt, numar));
 
-        int numarr = -12;
+        int numarr = -123;
         System.out.println(op.theGreatest(numarr));
 
 

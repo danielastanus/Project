@@ -14,7 +14,7 @@ public class Main {
 
 
         short myFirstNumber = 2;
-        short mySecondNumber = 9;
+        short mySecondNumber = 5;
         int myInt = myFirstNumber + mySecondNumber;
         System.out.println(myInt);
 

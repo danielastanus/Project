@@ -67,7 +67,7 @@ public class LogicalOperation {
         }else
             return "Got to try some more";
     }
-
+//am repetat aceste doua exercitii pentru a exersa
 public  void main(String[] args) {
 }
 public int switchExemple( int exemple) {
