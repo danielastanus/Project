@@ -71,7 +71,7 @@ public class LogicalOperation {
 public  void main(String[] args) {
 }
 public int switchExemple( int exemple) {
-        int theNumber = 8;
+        int theNumber = 6;
         switch (theNumber){
             case 2: System.out.println("The number is: 2!");break;
             case 4: System.out.println("The number is: 4!");break;
@@ -82,13 +82,6 @@ public int switchExemple( int exemple) {
         }
        return -1;
 }
-
-
-
-
-
-
-
 
 
     public boolean isNumberEven (int valuee) {
