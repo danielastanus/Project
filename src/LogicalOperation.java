@@ -67,22 +67,28 @@ public class LogicalOperation {
         }else
             return "Got to try some more";
     }
-//    Creati o metoda care primeste un numar ca si parametru si sa afiseze ce numar a primit.
-//    Folosind constructia Switch-Case, verificati ce numar s-a primit si afisati textul "The number is:  x !"
-//    unde x trebuie sa reprezinte numarul apasat. Pentru exemplul de fata sa nu se foloseasca concatenarea
-//    stringului "The number is:" cu numarul de la parametru, ci sa se scrie
-//    intreg textul cu tot cu numar pentru fiecare caz din Switch-Case.
-//    Apelati metoda in main() pentru a verifica daca functioneaza
 
-//    public int switchOp(int verifySwitch){
-//        int verify =45;
-//        switch (verifySwitch){
-//            case 10:System.out.println("10");break;
-//            case 25:System.out.println("25");break;
-//            case 45:System.out.println("39");break;
-//            case 50:System.out.println("50");break;
-//            default:System.out.println("Not found here");
-//    }
+public  void main(String[] args) {
+}
+public int switchExemple( int exemple) {
+        int theNumber = 8;
+        switch (theNumber){
+            case 2: System.out.println("The number is: 2!");break;
+            case 4: System.out.println("The number is: 4!");break;
+            case 6: System.out.println("The number is: 6!");break;
+            case 8: System.out.println("The number is: 8!");break;
+            case 10: System.out.println("The number is: 10!");
+            default: System.out.println("Number not found");
+        }
+       return -1;
+}
+
+
+
+
+
+
+
 
 
     public boolean isNumberEven (int valuee) {

@@ -33,9 +33,6 @@ public class Lab3 {
         String textCompare = op.parametru("FastTrackIT");
         System.out.println(textCompare);
 
-//        int switchMethod = op.switchOp(45);
-//        System.out.println(switchMethod);
-
         boolean evenNumber = op.isNumberEven(8);
         System.out.println(evenNumber);
 
@@ -44,6 +41,17 @@ public class Lab3 {
 
         float threeNumbers = op.compareThreeNumbers(54,2100, 100);
         System.out.println(threeNumbers);
+
+        int theNumber = 8;
+
+        int switchhhh = op.switchExemple(theNumber);
+        System.out.println(switchhhh);
+
+
+
+
+
+
 
     }
 }
