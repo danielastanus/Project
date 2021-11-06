@@ -1,5 +1,5 @@
 package AnimalRescuer;
 
 public class RecreationActivity {
-    String activityName = "Running";
+    String activityName = "Running after kids";
 }

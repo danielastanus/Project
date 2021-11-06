@@ -24,7 +24,7 @@ public class AppMain {
         AnimalFood food = new AnimalFood();
         System.out.println(food.foodName = "Royal canin");
         System.out.println(food.priceDolars = 30);
-        System.out.println(food.quantityKg = 5);
+        System.out.println(food.quantityKg = 6);
         System.out.println(food.stockAvailability = 75);
 
         Veterinary vet = new Veterinary();

@@ -1,6 +1,6 @@
 package AnimalRescuer;
 
 public class Veterinary {
-    String veterinaryName = "John";
+    String veterinaryName = "Johnny";
     String vetSpecialty = "Internal Medicine";
 }
