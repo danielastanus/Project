@@ -33,7 +33,7 @@ public class Lab2 {
         Print head = new Print();
         head.humanHead();
 
-        System.out.println(calc.printSpeedInMetric(20000, 4, 9, 45));
+        calc.printSpeedInMetric(20000, 4, 9, 45);
 
 
 
