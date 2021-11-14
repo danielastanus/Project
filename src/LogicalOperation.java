@@ -123,144 +123,167 @@ public class LogicalOperation {
 
     }
 
-    public void countBackward(int small, int big) {
-        for (int i = big; i >= small; i--) {
-            System.out.println(i);
-        }
-    }
-
-    public void givenNumber(int z) {
-        for (int i = z; i <= 100; i++) {
-            System.out.println(i);
-        }
-    }
-
-    public void numberNegative(int b) {
-        for (int g = b; g >= -100; g--) {
-            System.out.println(g);
-        }
-    }
-
-    public float getSumAndAverage(int first, int last) {
-        float sum = 0;
-        for (int i = first; i <= 100; i++) {
-            sum = i + sum;
-        }
-        return sum / (last - first + 1);
-
-    }
-
-    public void countingNumbers(int firstnumber, int secondnumber) {
-        for (int i = firstnumber; i <= secondnumber; i++) {
-            System.out.println(i);
-        }
-    }
-
-    public void evenNumbers(int l) {
-        for (int i = 1; i <= l; i++) {
-            if (i % 2 == 0) {
-
-                System.out.println(i);
-            }
-
-
-        }
-    }
-
-    public void notEvenNumbers(int n) {
-        for (int i = 1; i <= n; i++) {
-            if (i % 2 != 0) {
-                System.out.println(i);
-            }
-        }
-    }
-
-
-    public void numberingFrom(int first, int last) {
-        for (int x = first; x <= last; x++){
-            System.out.println(x);
-        }
-                for (int y = last; y <= first; y++) {
-                        System.out.println(y);
-                }
-
-    }
-
-    public void stars (int star){
-        for (int i = 1; i <= star; i++){
-            for (int i1 = 1; i1 <= i; i1++){
-                System.out.print('*');
-            }
-            System.out.println();
-        }
-    }
-
-
-//    public void number (int randomNumber){
-//        int i =randomNumber;
-//        while ( i <= 100){
+//    public void countBackward(int small, int big) {
+//        for (int i = big; i >= small; i--) {
 //            System.out.println(i);
-//            i++;
 //        }
 //    }
 //
-//    public void reverseNumber (int reverse){
-//        int i = reverse;
-//        while (i >=-100){
+//    public void givenNumber(int z) {
+//        for (int i = z; i <= 100; i++) {
 //            System.out.println(i);
-//            i--;
 //        }
 //    }
 //
-//    public void chooseNumbers (int n, int m){
-//        int i = n;
-//        while (i <= m){
-//            System.out.println(i);
-//            i++;
+//    public void numberNegative(int b) {
+//        for (int g = b; g >= -100; g--) {
+//            System.out.println(g);
 //        }
 //    }
-////    4. Creati o metoda in clasa LogicalOp, care sa primeste doi parametrii de tip numar.
-////    Metoda trebuie sa verifice care dintre cele doua numere este mai mare, si sa execute o
-////    numaratoare crescatoare de la cel mai mic la cel mai mare.(ex: daca int x e
-////    primul parametru iar int y  este cel de-al doilea, daca x  este mai mare decat y,  atunci numaratoarea sa fie de la y la x).
-//    public void conditionNumbers (int unu, int doi){
-//        int i = unu;
-//        int j = doi;
-//        while ( i<=doi || j<=unu){
-//            if (unu<=doi);
-//            System.out.println(i);
-//            i++;
+//
+//    public float getSumAndAverage(int first, int last) {
+//        float sum = 0;
+//        for (int i = first; i <= 100; i++) {
+//            sum = i + sum;
 //        }
-//            if (doi<=unu);
-//                System.out.println(j);
-//                j++;
+//        return sum / (last - first + 1);
+//
+//    }
+//
+//    public void countingNumbers(int firstnumber, int secondnumber) {
+//        for (int i = firstnumber; i <= secondnumber; i++) {
+//            System.out.println(i);
+//        }
+//    }
+//
+//    public void evenNumbers(int l) {
+//        for (int i = 1; i <= l; i++) {
+//            if (i % 2 == 0) {
+//
+//                System.out.println(i);
 //            }
 //
 //
+//        }
+//    }
 //
-////    5. Creati o metoda in clasa LogicalOp care sa afiseze toate numerele pare de la 1 la 100.
-//    public  void  evenNumbersWhile (){
-//        int i = 0;
-//        int number = 0;
-//        while (i <= 50)
-//        {
-//            System.out.println(number);
-//            i+=1;
-//            number+=2;
+//    public void notEvenNumbers(int n) {
+//        for (int i = 1; i <= n; i++) {
+//            if (i % 2 != 0) {
+//                System.out.println(i);
 //            }
+//        }
+//    }
+//
+//
+//    public void numberingFrom(int first, int last) {
+//        for (int x = first; x <= last; x++){
+//            System.out.println(x);
+//        }
+//                for (int y = last; y <= first; y++) {
+//                        System.out.println(y);
+//                }
+//
+//    }
+//
+//    public void stars (int star){
+//        for (int i = 1; i <= star; i++){
+//            for (int i1 = 1; i1 <= i; i1++){
+//                System.out.print('*');
+//            }
+//            System.out.println();
+//        }
+//    }
+
+
+    public void number (int randomNumber){
+        int i =randomNumber;
+        while ( i <= 100){
+            System.out.println(i);
+            i++;
+        }
+    }
+
+    public void reverseNumber (int reverse){
+        int i = reverse;
+        while (i >=-100){
+            System.out.println(i);
+            i--;
+        }
+    }
+
+    public void chooseNumbers (int n, int m){
+        int i = n;
+        while (i <= m){
+            System.out.println(i);
+            i++;
+        }
+    }
+    public void conditionNumbers (int unu, int doi){
+        int i = unu;
+        while (i<=doi){
+            int j =doi;
+            while (j<=unu){
+                System.out.println(j);
+                j++;
+            }
+            System.out.println(i);
+            i++;
+        }
+
+    }
+
+
+
+//    5. Creati o metoda in clasa LogicalOp care sa afiseze toate numerele pare de la 1 la 100.
+//    public  void  evenNumbersWhile (int n){
+//      do {
+//          System.out.println( n % 2 = 0);
+//      }
 //        }
 //
 ////    6. Creati o metoda in clasa LogicalOp care sa afiseze toate numerele impare de la 1 la 100.
-//
-//    public void notEvenWhile (int x){
+
+//    public int notEvenWhile (int x){
 //        int i =1;
 //        while ( i<=x){
 //            if (i % 2 !=0){
-//                System.out.println(i);
 //                i++;
 //            }
 //        }
+//        return i;
 //    }
+
+
+    public float sumNumbers (int first, int last) {
+        int i = first;
+        int sum = 0;
+        int count = 0;
+        while (i <= last){
+            sum += i;
+            count++;
+            i++;
+        }
+        return sum/count;
+
+    }
+
+    public float numbersDivisibleSeven (int start, int max){
+        int x =start;
+        float sum= 0;
+        float count = 0;
+        while (x <= max){
+            if (x % 7 == 0){
+                sum += x;
+                count++;
+            }
+            x++;
+        }
+        return sum/count;
+    }
+
+public int fibonacci(int number){
+}
 
 
 
