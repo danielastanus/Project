@@ -1,5 +1,11 @@
 package AnimalRescuer;
 
 public class RecreationActivity {
-    String activityName = "Running after kids";
+    private String activityName;
+    public String getActivityName(){
+        return activityName;
+    }
+    public void setActivityName(String activityName){
+        this.activityName = activityName;
+    }
 }
