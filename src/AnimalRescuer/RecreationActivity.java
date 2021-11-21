@@ -1,6 +1,6 @@
 package AnimalRescuer;
 
-public class RecreationActivity {
+public class RecreationActivity extends FreeTime {
     private String activityName;
     public String getActivityName(){
         return activityName;

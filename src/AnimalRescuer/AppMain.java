@@ -41,6 +41,11 @@ public class AppMain {
         dog.setStateOfMind(9);
         System.out.println(dog.getStateOfMind());
 
+        Animal cat = new Animal();
+        cat.setName("Lolly");
+        System.out.println(cat.getName());
+
+
         Adopter adopter = new Adopter();
 
         String adopterName = adopter.getAdopterName();
@@ -83,6 +88,15 @@ public class AppMain {
         String vetSpecialty= vet.getVetSpecialty();
         vet.setVetSpecialty("Dermatology");
         System.out.println(vet.getVetSpecialty());
+
+        Dog tommy = new Dog();
+        tommy.wavingTail();
+
+
+
+
+
+
 
 
 

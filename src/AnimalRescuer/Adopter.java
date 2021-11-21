@@ -1,6 +1,6 @@
 package AnimalRescuer;
 
-public class Adopter {
+public class Adopter extends Humans {
     private String adopterName;
     public String getAdopterName(){
         return adopterName;

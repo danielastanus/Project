@@ -1,6 +1,6 @@
 package AnimalRescuer;
 
-public class AnimalFood {
+public class AnimalFood extends Supplies{
     private String foodName;
     public String getFoodName(){
         return foodName;

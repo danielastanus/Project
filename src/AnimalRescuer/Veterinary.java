@@ -1,6 +1,6 @@
 package AnimalRescuer;
 
-public class Veterinary {
+public class Veterinary extends HealthCare {
     private String veterinaryName;
     public String getVeterinaryName(){
         return veterinaryName;
