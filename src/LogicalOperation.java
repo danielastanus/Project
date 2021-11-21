@@ -358,7 +358,9 @@ public class LogicalOperation {
     public int[] givenArray = {1,4,7,8};
 
     public int[] skipValue(int[]givenArray, int index){
-        for (int i=0; i <givenArray.length; i++);
+        for (int i=0; i <givenArray.length; i++){
+            if (givenArray[i] != index);
+        }
         return givenArray;
     }
 

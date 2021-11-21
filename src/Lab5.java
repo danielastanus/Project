@@ -33,7 +33,7 @@ public class Lab5 {
         System.out.println(operation.isValueInString(operation.populateStringArray(), "f"));
 
 
-        System.out.println(operation.skipValue(operation.givenArray, 7));
+        System.out.println(operation.skipValue(operation.givenArray,8 ));
 
 
 // Exercitiul 3
