@@ -1,3 +1,4 @@
+import javax.print.DocFlavor;
 import javax.swing.*;
 
 public class LogicalOperation {
@@ -195,109 +196,180 @@ public class LogicalOperation {
 //        }
 //    }
 
-
-    public void number (int randomNumber){
-        int i =randomNumber;
-        while ( i <= 100){
-            System.out.println(i);
-            i++;
-        }
-    }
-
-    public void reverseNumber (int reverse){
-        int i = reverse;
-        while (i >=-100){
-            System.out.println(i);
-            i--;
-        }
-    }
-
-    public void chooseNumbers (int n, int m){
-        int i = n;
-        while (i <= m){
-            System.out.println(i);
-            i++;
-        }
-    }
-    public void conditionNumbers (int unu, int doi){
-        int i = unu;
-        while (i<=doi){
-            int j =doi;
-            while (j<=unu){
-                System.out.println(j);
-                j++;
-            }
-            System.out.println(i);
-            i++;
-        }
-
-    }
-
-
-
-//    5. Creati o metoda in clasa LogicalOp care sa afiseze toate numerele pare de la 1 la 100.
-//    public  void  evenNumbersWhile (int n){
-//      do {
-//          System.out.println( n % 2 = 0);
-//      }
+//
+//    public void number (int randomNumber){
+//        int i =randomNumber;
+//        while ( i <= 100){
+//            System.out.println(i);
+//            i++;
+//        }
+//    }
+//
+//    public void reverseNumber (int reverse){
+//        int i = reverse;
+//        while (i >=-100){
+//            System.out.println(i);
+//            i--;
+//        }
+//    }
+//
+//    public void chooseNumbers (int n, int m){
+//        int i = n;
+//        while (i <= m){
+//            System.out.println(i);
+//            i++;
+//        }
+//    }
+//    public void conditionNumbers (int unu, int doi){
+//        int i = unu;
+//        while (i<=doi){
+//            int j =doi;
+//            while (j<=unu){
+//                System.out.println(j);
+//                j++;
+//            }
+//            System.out.println(i);
+//            i++;
 //        }
 //
-////    6. Creati o metoda in clasa LogicalOp care sa afiseze toate numerele impare de la 1 la 100.
-
-//    public int notEvenWhile (int x){
-//        int i =1;
-//        while ( i<=x){
-//            if (i % 2 !=0){
-//                i++;
-//            }
+//    }
+//
+//
+//
+////    5. Creati o metoda in clasa LogicalOp care sa afiseze toate numerele pare de la 1 la 100.
+//
+//    public  void  evenNumbersWhile (){
+//      int i = 1;
+//      while (i<=100){
+//          i++;
+//          if (i % 2 == 0){
+//          }
+//          System.out.println(i);
+//      }
+//
+//      }
+//
+////
+//////    6. Creati o metoda in clasa LogicalOp care sa afiseze toate numerele impare de la 1 la 100.
+////
+////    public int notEvenWhile (int x){
+////        int i =1;
+////        while ( i<=x){
+////            i++;
+////            if (i % 2 !=0){
+////            }
+////        }
+////    }
+//
+//
+//    public float sumNumbers (int first, int last) {
+//        int i = first;
+//        int sum = 0;
+//        int count = 0;
+//        while (i <= last){
+//            sum += i;
+//            count++;
+//            i++;
 //        }
-//        return i;
+//        return sum/count;
+//
+//    }
+//
+//    public float numbersDivisibleSeven (int start, int max){
+//        int x =start;
+//        float sum= 0;
+//        float count = 0;
+//        while (x <= max){
+//            if (x % 7 == 0){
+//                sum += x;
+//                count++;
+//            }
+//            x++;
+//        }
+//        return sum/count;
 //    }
 
 
-    public float sumNumbers (int first, int last) {
-        int i = first;
-        int sum = 0;
-        int count = 0;
-        while (i <= last){
-            sum += i;
-            count++;
-            i++;
+    public int[] populateArray(int max) {
+        int[] myArr = new int[max];
+        for (int i = 0; i < max; i++) {
+            myArr[i] = i + 1;
         }
-        return sum/count;
-
+        return myArr;
     }
 
-    public float numbersDivisibleSeven (int start, int max){
-        int x =start;
-        float sum= 0;
-        float count = 0;
-        while (x <= max){
-            if (x % 7 == 0){
-                sum += x;
-                count++;
+    public void printArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
+        }
+    }
+
+    //Exercitiul 4
+
+    public float getAverageValueFromArray(int[] array) {
+        float sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            sum = sum + array[i];
+        }
+        return (sum / array.length);
+    }
+
+    public boolean isValueInArray(int[] array, int value) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == value) {
+                return true;
             }
-            x++;
         }
-        return sum/count;
+        return false;
     }
 
-public int fibonacci(int number){
+
+    //5. Exercitiul 5
+
+    public String [] populateStringArray(){
+        String[] arrayString = new String[4];
+        arrayString[0] = "a";
+        arrayString[1] = "b";
+        arrayString[2] = "c";
+        arrayString[3] = "d";
+        return arrayString;
+    }
+    public boolean isValueInString (String[] arrayString, String value){
+        for (int i = 0; i < arrayString.length; i++){
+            if (arrayString[i]==value){
+                return true;
+            }
+        }
+        return false;
+    }
+
+//    Exercitiul 6
+    public int isInArray (int[] array, int value){
+        for (int i = 0; i < array.length; i++);
+        return array[value];
+
+    }
+
+    //Exercitiul 8
+//    8. Creati o metoda care sa primeasca un parametru de tip array de numere, populat cu valori,
+//    si un parametru de tip numar. Metoda sa verifice daca numarul exista in array,
+//    si daca da, sa returneze array-ul primit, fara acel numar. Apelati metoda in main() pentru a verifica daca functioneaza.
+
+    public int[] givenArray = {1,4,7,8};
+
+    public int[] skipValue(int[]givenArray, int index){
+        for (int i=0; i <givenArray.length; i++);
+        return givenArray;
+    }
+
+
+
+
+
+
+
+
+
+
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
