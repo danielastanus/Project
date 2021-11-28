@@ -14,4 +14,15 @@ public class Chihuahua extends Dog{
     public void eat() {
         super.eat();
     }
+
+    @Override
+    public void play() {
+        super.play();
+    }
+
+
+    @Override
+    public void wavingTail() {
+        super.wavingTail();
+    }
 }

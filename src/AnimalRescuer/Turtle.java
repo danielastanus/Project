@@ -1,17 +1,17 @@
 package AnimalRescuer;
 
-public class Turtle extends Animal{
+public abstract class Turtle extends Animal{
     public void play(){
         System.out.println("not");
     }
 
     @Override
     public void speak() {
-        super.speak();
+        System.out.println("wow");
     }
 
     @Override
     public void sleep() {
-        super.sleep();
+        System.out.println("bzz");
     }
 }

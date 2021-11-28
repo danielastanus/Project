@@ -1,6 +1,6 @@
 package AnimalRescuer;
 
-public class Animal {
+public abstract class Animal {
     private String animalType;
     public String getAnimalType(){
         return animalType;
@@ -68,21 +68,13 @@ public class Animal {
         this.favoriteActivity = favoriteActivity;
     }
 
-    public void eat(){
-        System.out.println("Eating");
-    }
+    public abstract void eat();
 
-    public void sleep(){
-        System.out.println("Zzz");
-    }
+    public abstract void sleep();
 
-    public void play(){
-        System.out.println("playing");
-    }
+    public abstract void play();
 
-    public void speak(){
-        System.out.println("aaa");
-    }
+    public abstract void speak();
 
 
 }

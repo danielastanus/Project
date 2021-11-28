@@ -1,6 +1,6 @@
 package AnimalRescuer;
 
-public class Cat extends Animal {
+public abstract class Cat extends Animal {
 
     @Override
     public void speak() {
@@ -9,5 +9,9 @@ public class Cat extends Animal {
 
     public void eat() {
         System.out.println("milk");
+    }
+
+    public void purr() {
+
     }
 }

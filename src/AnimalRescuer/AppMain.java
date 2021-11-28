@@ -2,7 +2,7 @@ package AnimalRescuer;
 
 public class AppMain {
     public static void main(String[] args) {
-        Animal dog = new Animal();
+        Chihuahua dog = new Chihuahua();
 
         int age = dog.getAge();
         dog.setAge(2);
@@ -41,7 +41,8 @@ public class AppMain {
         dog.setStateOfMind(9);
         System.out.println(dog.getStateOfMind());
 
-        Animal cat = new Animal();
+        Animal cat = new AmericanShorthair();
+
         cat.setName("Lolly");
         System.out.println(cat.getName());
 
@@ -89,10 +90,10 @@ public class AppMain {
         vet.setVetSpecialty("Dermatology");
         System.out.println(vet.getVetSpecialty());
 
-        Dog tommy = new Dog();
+        Chihuahua tommy = new Chihuahua();
         tommy.wavingTail();
 
-        Cat sue = new Cat();
+        AmericanShorthair sue = new AmericanShorthair();
         sue.speak();
 
         Rotweiler doog = new Rotweiler();

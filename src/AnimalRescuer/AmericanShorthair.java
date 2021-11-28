@@ -1,23 +1,24 @@
 package AnimalRescuer;
 
 public class AmericanShorthair extends Cat{
-    @Override
-    public void eat() {
-        super.eat();
-    }
 
     @Override
-    public void speak() {
-        super.speak();
+    public void sleep() {
+
     }
 
     @Override
     public void play() {
-        super.play();
+
     }
 
     @Override
-    public void sleep() {
-        super.sleep();
+    public void purr() {
+
+    }
+
+    @Override
+    public void speak() {
+
     }
 }
