@@ -68,5 +68,21 @@ public class Animal {
         this.favoriteActivity = favoriteActivity;
     }
 
+    public void eat(){
+        System.out.println("Eating");
+    }
+
+    public void sleep(){
+        System.out.println("Zzz");
+    }
+
+    public void play(){
+        System.out.println("playing");
+    }
+
+    public void speak(){
+        System.out.println("aaa");
+    }
+
 
 }

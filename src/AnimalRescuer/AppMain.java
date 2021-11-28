@@ -92,6 +92,16 @@ public class AppMain {
         Dog tommy = new Dog();
         tommy.wavingTail();
 
+        Cat sue = new Cat();
+        sue.speak();
+
+        Rotweiler doog = new Rotweiler();
+        doog.speak();
+        doog.wavingTail();
+        dog.eat();
+
+
+
 
 
 

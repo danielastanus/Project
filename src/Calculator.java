@@ -1,11 +1,26 @@
+import java.util.List;
+
 public class Calculator {
 
 
 
-        public double sum (float x, float y) {
+         public double sum (float x, float y) {
             double result = x + y;
             return result;
         }
+
+        public double sum (float x, float y, float z) {
+            double result = x + y + z;
+            return result;
+    }
+
+        public double sum (List<Integer> list) {
+            double result = 0;
+            for (Integer x: list){
+            result += x;
+        }
+        return result;
+    }
 
 
         public  double substraction (float x, float y){
@@ -13,16 +28,33 @@ public class Calculator {
             return result1;
         }
 
+    public  double substraction (double x, float y, float z){
+        double result1 = x - y - z;
+        return result1;
+    }
+
+
         public double multiplication (float x, float y){
             double result2 = x * y;
             return result2;
         }
+
+    public double multiplication (float x, float y, double z){
+        double result2 = x * y * z;
+        return result2;
+    }
 
 
         public float division (float x, float y){
             float result3 = x/y;
             return result3;
         }
+
+    public float division (float x, float y, float z){
+        float result3 = x/y/z;
+        return result3;
+    }
+
         public float modulus (float x, float y){
             float result4 = x%y;
             return result4;
