@@ -1,5 +1,7 @@
 import javax.print.DocFlavor;
 import javax.swing.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class LogicalOperation {
 
@@ -304,6 +306,18 @@ public class LogicalOperation {
         }
     }
 
+    //    Exercitiul 3
+    public int[] getEvenArray(int[] evenArray) {
+        int j = 0;
+        for (int i = 1; i <= 100; i++) {
+            if (1 % 2 == 0) {
+                evenArray[j] = i;
+                j++;
+            }
+        }
+        return evenArray;
+    }
+
     //Exercitiul 4
 
     public float getAverageValueFromArray(int[] array) {
@@ -326,7 +340,7 @@ public class LogicalOperation {
 
     //5. Exercitiul 5
 
-    public String [] populateStringArray(){
+    public String[] populateStringArray() {
         String[] arrayString = new String[4];
         arrayString[0] = "a";
         arrayString[1] = "b";
@@ -334,44 +348,159 @@ public class LogicalOperation {
         arrayString[3] = "d";
         return arrayString;
     }
-    public boolean isValueInString (String[] arrayString, String value){
-        for (int i = 0; i < arrayString.length; i++){
-            if (arrayString[i]==value){
+
+    public boolean isValueInString(String[] arrayString, String value) {
+        for (int i = 0; i < arrayString.length; i++) {
+            if (arrayString[i] == value) {
                 return true;
             }
         }
         return false;
     }
 
-//    Exercitiul 6
-    public int isInArray (int[] array, int value){
-        for (int i = 0; i < array.length; i++);
-        return array[value];
-
+    //    Exercitiul 6
+    public int isInArray(int[] array, int value) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == value) {
+                return i;
+            }
+        }
+        return 0;
     }
+
 
     //Exercitiul 8
 //    8. Creati o metoda care sa primeasca un parametru de tip array de numere, populat cu valori,
 //    si un parametru de tip numar. Metoda sa verifice daca numarul exista in array,
 //    si daca da, sa returneze array-ul primit, fara acel numar. Apelati metoda in main() pentru a verifica daca functioneaza.
 
-    public int[] givenArray = {1,4,7,8};
+    public int[] givenArray = {1, 4, 7, 8};
 
-    public int[] skipValue(int[]givenArray, int index){
-        for (int i=0; i <givenArray.length; i++){
-            if (givenArray[i] != index);
+    public int[] skipValue(int[] givenArray, int index) {
+        if (isValueInArray(givenArray, index)) {
+            int[] secondArray = new int[givenArray.length - 1];
+            for (int i = 0, j = 0; i < givenArray.length; i++) {
+                if (givenArray[i] != index) {
+                    secondArray[j] = givenArray[i];
+                    j++;
+                }
+            }
+            return secondArray;
         }
         return givenArray;
+
+    }
+
+    //    Exercitiul 9
+    public int getSeconSmallestNuInArr(int[] myArray) {
+        int temporay = 0;
+        for (int i = 0; i < myArray.length; i++) {
+            for (int j = i + 1; j < myArray.length; j++) {
+                if (myArray[i] > myArray[j]) {
+                    temporay = myArray[j];
+                    myArray[j] = myArray[i];
+                    myArray[i] = temporay;
+                }
+            }
+        }
+        return myArray[1];
+    }
+
+    //    Exercitiul 10
+    public int[] copyArray(int[] fullArray, int[] emptyArray) {
+        for (int i = 0, j = 0; i < fullArray.length; i++) {
+            emptyArray[j] = fullArray[i];
+            j++;
+        }
+        return emptyArray;
     }
 
 
+    public List<Integer> getPopulatedList(int max) {
+        List<Integer> myList = new ArrayList<>();
+        for (int i = 1; i <= max; i++) {
+            myList.add(i);
+        }
+        return myList;
+    }
 
 
+    //  exercitiul 1
+    //  Scrieti o metoda Java, care sa primeasca parametru o Lista, si sa afiseze, pe rand, toate valorile din lista, fiecare pe rand nou.
+
+    public void displayList(List<Integer> myList) {
+        for (int i = 1; i <= myList.size(); i++) {
+            System.out.println(myList.get(i));
+        }
+    }
+
+//    exercitiul 2
+//    Scrieti o metoda Java, care sa primeasca doi parametrii: un parametru sa fie o lista de numere,
+//    si celalalt un numar (real sau intreg). Metoda sa adauge numarul primit ca si parametru la final de lista.
+
+    public void addNumberToList(List<Integer> myList, int number) {
+        for (int i = 0; i < myList.size(); i++) {
+            System.out.println(myList.get(i));
+
+        }
+
+    }
+
+//  exercitiul 3
+//Scrieti o metoda Java, care sa primeasca doi parametrii: un parametru de tip Lista, iar celalalt un numar intreg.
+//    Sa se parcurga lista si sa afiseze,
+//    pe rand, toate valorile din lista, fiecare pe rand nou, pornind de la numarul intreg primit ca si parametru.
+
+    public void printListFromNumber(List<Integer> myList, int number) {
+        for (int i = number; i <= myList.size(); i++) {
+            System.out.println(myList.get(i - 1));
+        }
+    }
+
+//    exercitiul 4
+//Scrieti o metoda Java, care sa primeasca parametru o Lista, si sa afiseze, pe rand, toate valorile din lista,
+//    dar invers(de la capat la inceput).
+
+    public void reverseNumber(List<Integer> myList) {
+        for (int i = myList.size() - 1; i >= 0; i--) {
+            System.out.println(myList.get(i));
+        }
+    }
+
+//    exercitiul 5
+//Scrieti o metoda Java, care sa primeasca trei parametrii: unul de tip Lista de String-uri, unul de tip intreg, si unul de tip String.
+//    Metoda sa adauge parametrul de tip String in lista primita, iar parametrul de tip intreg reprezinta pozitia la care sa fie pus acel String.
+
+    public void addStringToList(List<String> stringList, int number, String string) {
+
+        for (String s : stringList) {
+            System.out.println(s);
+        }
+    }
+
+//    exercitiul 6
+//Scrieti o metoda Java, care sa primeasca doi parametrii.
+//    Primul dintre ei va fi o Lista, iar metoda sa ia al doilea parametru si sa il adauge pe prima pozitie din lista.
+
+    public void addOnFirstPosition(List<Integer> fistList, int number) {
+        int min = fistList.get(0);
+        for (int i = 1; i < fistList.size(); i++) {
+            if (fistList.get(i) < min) {
+                min = fistList.get(i);
+            }
+            System.out.println(i);
+        }
 
 
+    }
 
+//    exercitiul 8
+//Scrieti o metoda Java care sa primeasca o Lista si sa returneze cel mai mare numar din ea.
 
-
-
+//    public void smallestNumberInArray(List<Integer> integerList){
+//        if (integerList == null ||integerList.size() == 0){;
+//        }
+//
+//    }
 
 }
