@@ -429,7 +429,7 @@ public class LogicalOperation {
     //  Scrieti o metoda Java, care sa primeasca parametru o Lista, si sa afiseze, pe rand, toate valorile din lista, fiecare pe rand nou.
 
     public void displayList(List<Integer> myList) {
-        for (int i = 1; i <= myList.size(); i++) {
+        for (int i = 0; i < myList.size(); i++) {
             System.out.println(myList.get(i));
         }
     }
@@ -439,10 +439,8 @@ public class LogicalOperation {
 //    si celalalt un numar (real sau intreg). Metoda sa adauge numarul primit ca si parametru la final de lista.
 
     public void addNumberToList(List<Integer> myList, int number) {
-        for (int i = 0; i < myList.size(); i++) {
-            System.out.println(myList.get(i));
+        myList.add(number);
 
-        }
 
     }
 
@@ -472,10 +470,8 @@ public class LogicalOperation {
 //    Metoda sa adauge parametrul de tip String in lista primita, iar parametrul de tip intreg reprezinta pozitia la care sa fie pus acel String.
 
     public void addStringToList(List<String> stringList, int number, String string) {
+        stringList.add(0, string);
 
-        for (String s : stringList) {
-            System.out.println(s);
-        }
     }
 
 //    exercitiul 6
@@ -483,13 +479,7 @@ public class LogicalOperation {
 //    Primul dintre ei va fi o Lista, iar metoda sa ia al doilea parametru si sa il adauge pe prima pozitie din lista.
 
     public void addOnFirstPosition(List<Integer> fistList, int number) {
-        int min = fistList.get(0);
-        for (int i = 1; i < fistList.size(); i++) {
-            if (fistList.get(i) < min) {
-                min = fistList.get(i);
-            }
-            System.out.println(i);
-        }
+        fistList.add(0, number);
 
 
     }
@@ -497,10 +487,41 @@ public class LogicalOperation {
 //    exercitiul 8
 //Scrieti o metoda Java care sa primeasca o Lista si sa returneze cel mai mare numar din ea.
 
-//    public void smallestNumberInArray(List<Integer> integerList){
-//        if (integerList == null ||integerList.size() == 0){;
-//        }
+//    public void biggestNumberInArray(List<Integer> integerList){
+//     int biggest = integerList.get(0);
+//     for (int i =0; i<integerList.size(); i++){
+//         if (integerList.get(i)>biggest){
+//             biggest = integerList.get(i);
+//         }
+//     }
+//     return biggest;
 //
 //    }
+//
 
+
+    public void wait(int seconds) {
+        System.out.println("Sleeping for: ");
+        do {
+            System.out.println(seconds);
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException interruptedException) {
+                interruptedException.printStackTrace();
+            }
+            seconds--;
+        } while (seconds > 0);
+    }
+
+    public int[] getGivenArray(int[] myArr, int number) {
+
+        try {
+            int[] myArray = {1,2,3};
+            System.out.println(myArray[number]);
+        } catch (ArrayIndexOutOfBoundsException exception) {
+            System.out.println("Inside catch, number too large");
+
+        }
+        return null;
+    }
 }
